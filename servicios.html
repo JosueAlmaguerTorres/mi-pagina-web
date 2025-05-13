@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/Logo para mi-web.png" alt="Consultor Nutrición Deportiva Josué Almaguer" id="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quien-soy.html">Quién soy</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="testimonios.html">Testimonios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <p>Descubre los servicios que tengo para ti. Totalmente personalizados y adaptados a tu estilo de vida.</p>
+
+            <div class="servicios-contenedor">
+                <div class="servicio-box" onclick="mostrarModal('Consulta Nutricional')">
+                    <img src="images/Consulta nutricional.jpeg" alt="Consulta Nutricional">
+                    <h3>Consulta Nutricional</h3>
+                    <p>Evaluación y plan personalizado para mejorar tu alimentación y salud.</p>
+                    <p>Presencial/1 hora: $500</p>
+                    <p>Online/1 hora: $399</p>
+                </div>
+
+                <div class="servicio-box" onclick="mostrarModal('Plan de entrenamiento personalizado')">
+                    <img src="images/Plan de entrenamiento.jpeg" alt="Plan de Entrenamiento">
+                    <h3>Plan de Entrenamiento</h3>
+                    <p>Rutinas diseñadas para mejorar tu rendimiento físico y alcanzar tus metas.</p>
+                    <p>Presencial/hora: $600</p>
+                    <p>Online rutina: $499</p>
+                </div>
+
+                <div class="servicio-box" onclick="mostrarModal('Asesoria en suplementación')">
+                    <img src="images/Asesoria en suplementacion.jpeg" alt="Asesoría en Suplementación">
+                    <h3>Asesoría en Suplementación</h3>
+                    <p>Guía sobre suplementos basados en evidencia científica y tus necesidades.</p>
+                    <p>Presencial: $400  Online: $299</p>
+                    <p>Online: $299</p>
+                </div>
+                <div class="servicio-box" onclick="mostrarModal('oro')">
+                    <img src="images/Plan nutricional oro.webp" alt="Plan Nutricional Oro">
+                    <h3>Plan Nutricional, Entrenamiento y Suplementación</h3>
+                    <p>Un plan premium personalizado con seguimiento para alcanzar tus metas.</p>
+                    <p>Presencial/1 hora: $4,000</p>
+                    <p>Online/1hora: $2,099</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <img src="images/Logo para mi-web.png" alt="Logo de Josué Consultor Nutricional" class="footer-logo">
+            <div class="footer-links">
+                <a href="terminos.html">Términos y condiciones</a>
+                <a href="privacidad.html">Política de privacidad</a>
+                <a href="soporte.html">Soporte</a>
+                <span>Todos los Derechos Reservados</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal-oro" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal('oro')">&times;</span>
+            <h2>Plan Nutricional Oro</h2>
+            <p>Incluye evaluación nutricia completa, plan personalizado de 4 menús (1 nuevo cada semana), seguimiento semanal por 1 mes, rutina de entrenamiento de HIIT y GYM de acuerdo a tus objetivos y asesoría en suplementación.</p>
+            <p>Válido por 30 días</p>
+        </div>
+    </div>
+
+    <div id="modal-Consulta Nutricional" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal('Consulta Nutricional')">&times;</span>
+            <h2>Consulta Nutricional</h2>
+            <p>Evaluación antropométrica, bioquímica, clínica y dietética. Plan personalizado de 2 menús de alimentos, seguimiento por 1 mes.</p>
+            <p>Válido por 30 días</p>
+        </div>
+    </div>
+
+    <div id="modal-Plan de entrenamiento personalizado" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal('Plan de entrenamiento personalizado')">&times;</span>
+            <h2>Plan de entrenamiento personalizado</h2>
+            <p>Evaluación de condición física, objetivos y nivel de entrenamiento. Rutinas adaptadas con progresiones semanales y seguimiento por 1 mes.</p>
+            <p>Válido por 30 días</p>
+        </div>
+    </div>
+
+    <div id="modal-Asesoria en suplementación" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal('Asesoria en suplementación')">&times;</span>
+            <h2>Asesoria en suplementación</h2>
+            <p>Análisis de objetivos, tipo de entrenamiento y estado de salud. Recomendaciones basadas en evidencia científica, con ajuste y seguimiento por 1 mes.</p>
+            <p>Válido por 30 días</p>
+        </div>
+    </div>
+
+    <script>
+        function mostrarModal(id) {
+            document.getElementById('modal-' + id).style.display = 'flex';
+        }
+
+        function cerrarModal(id) {
+            document.getElementById('modal-' + id).style.display = 'none';
+        }
+    </script>
+    <script src="Js/script.js"></script>
+</body>
+</html>

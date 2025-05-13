@@ -1,0 +1,473 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #004d00, #001a00); /* Ajusta los colores según tu diseño */
+    background-attachment: fixed; /* Mantiene el fondo fijo mientras se hace scroll */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+}
+
+/* Encabezado */
+header {
+    background-color: white;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+#logo {
+    width: 150px;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+/* Sección Inicio */
+#inicio {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#inicio .contenido {
+    text-align: left;
+    max-width: 800px;
+    margin: 40px auto;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Sección Quién Soy */
+#quien-soy {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)); /* Degradado oscuro a más claro */
+    color: white !important; /* Texto blanco */
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Estilo del título */
+#quien-soy h2 {
+    color: white !important; /* Título en blanco */
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Estilo de los párrafos */
+#quien-soy p {
+    color: white !important; /* Párrafos en blanco */
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+.quien-soy-contenido {
+    display: flex;
+    align-items: center;  /* Alinea verticalmente */
+    gap: 20px;  /* Espacio entre la foto y el texto */
+    max-width: 800px;
+    margin: auto;
+}
+
+.contenedor-imagen {
+    top: 150px;
+    position: absolute;
+    left: 50px;
+    z-index: 10; /* Se asegura de que esté encima de la sección */
+}
+
+.foto-perfil {
+    width: 200px; /* Ajusta el tamaño */
+    height: auto;
+    border-radius: 50%; /* Hace la imagen circular */
+    border: 5px solid white; /* Borde blanco para destacar */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para efecto flotante */
+}
+
+.texto {
+    flex: 1;  /* Hace que el texto ocupe el espacio restante */
+    text-align: justify;
+}
+/* Sección Servicios */
+#servicios {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)); /* Mismo degradado */
+    color: white;
+    padding: 40px;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 900px;
+    border-radius: 10px;
+}
+
+.servicios-contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.servicio-box {
+    background-color: rgba(255, 255, 255, 0.2); /* Caja con efecto transparente */
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.servicio-box:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.servicio-box img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.servicio-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Sección Asesoría */
+#asesoria {
+    background: linear-gradient(to bottom, #4CAF50, #2C3E50);
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.asesoria-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.asesoria-box {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 320px;
+    height: 300px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 3px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.asesoria-img {
+    width: 120px; /* Tamaño fijo */
+    height: 120px; 
+    object-fit: contain; /* Evita recorte de imagen */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: white;
+    padding: 20px 0;
+    border-top: 2px solid #ccc;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    width: 100px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding-bottom: 50px; /* Añadir espacio en la parte inferior */
+}
+
+/* Asegúrate de que no haya márgenes negativos ni algo que cause solapamientos */
+section {
+    margin-bottom: 30px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    min-height: 100%; /* Garantiza que el contenido ocupe todo el alto */
+    padding-bottom: 50px; /* espacio extra para el footer */
+    box-sizing: border-box;
+}
+
+footer {
+    position: relative;
+    margin-top: 30px; /* Espacio superior para no solaparse */
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  #recursos {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+    color: white;
+    padding: 40px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 40px auto;
+    border-radius: 10px;
+}
+
+.recursos-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.recurso-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 260px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.recurso-box:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.recurso-box img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.recurso-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.recurso-box .btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.recurso-box .btn:hover {
+    background-color: #45a049;
+}
+
+.recursos {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 40px 0;
+    border-radius: 15px;
+  }
+  
+  .contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .testimonio {
+    background-color: #2c2c2c;
+    border-left: 5px solid #4caf50;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+    font-style: italic;
+  }
+  
+  .testimonio cite {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    color: #ccc;
+    font-weight: bold;
+  }
+  .nuevo-testimonio {
+    background-color: #2c2c2c;
+    color: #fff;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 15px;
+    text-align: left;
+  }
+  
+  .nuevo-testimonio h3 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .nuevo-testimonio label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  .nuevo-testimonio input,
+  .nuevo-testimonio textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .nuevo-testimonio .btn {
+    margin-top: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+  }
+  
+  .nuevo-testimonio .btn:hover {
+    background-color: #45a049;
+  }
+  
+  #terminos ul li {
+    margin-bottom: 1.5rem; /* Espacio más amplio entre cada término */
+    line-height: 1.6; /* Hace que las líneas dentro del mismo párrafo estén un poco más separadas */
+  }
+  #terminos ul {
+  padding-left: 20px;
+}
+
+#terminos ul li {
+  margin-bottom: 2rem;              /* Más espacio entre cada punto */
+  line-height: 1.6;                 /* Mejor lectura en párrafos largos */
+  text-align: justify;             /* Texto justificado */
+  border-bottom: 1px solid #ccc;   /* Línea divisoria entre puntos */
+  padding-bottom: 1rem;            /* Espacio después de la línea */
+}
+
+#privacidad ul {
+  padding-left: 20px;
+}
+
+#privacidad ul li {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  text-align: justify;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+
+#soporte ul {
+  padding-left: 20px;
+}
+
+#soporte ul li {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  text-align: justify;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
