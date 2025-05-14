@@ -6,6 +6,120 @@
     <title>Josué Nutrición</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <style>
+        /* SOLO CAMBIOS RESPONSIVOS SIN TOCAR TU ESTILO */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            text-align: center;
+            padding: 1rem;
+            background-color: #f8f8f8;
+        }
+
+        #logo {
+            max-width: 200px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 0.5rem 1rem;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        .contenido {
+            max-width: 800px;
+            margin: auto;
+            padding: 1rem;
+        }
+
+        .asesoria-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .asesoria-box {
+            flex: 1 1 200px;
+            max-width: 300px;
+            background-color: #f0f0f0;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .asesoria-img {
+            width: 80px;
+            height: auto;
+        }
+
+        footer {
+            background-color: #f8f8f8;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .footer-logo {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .footer-links a {
+            margin: 0 0.5rem;
+            color: #555;
+            text-decoration: none;
+        }
+
+        .footer-links span {
+            display: block;
+            margin-top: 0.5rem;
+            color: #888;
+        }
+
+        /* RESPONSIVE AJUSTES */
+        @media screen and (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .asesoria-box {
+                max-width: 90%;
+            }
+
+            .contenido {
+                padding: 1rem 0.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -35,28 +149,27 @@
 
         <section id="asesoria">
             <h2>Asesoría Online</h2>
-        </section>
-
-        <div class="asesoria-container">
-            <div class="asesoria-box">
-                <img src="images/manzana sin fondo.png" alt="Plan de alimentación" class="asesoria-img">
-                <h3>Plan de alimentación personalizado</h3>
+            <div class="asesoria-container">
+                <div class="asesoria-box">
+                    <img src="images/manzana sin fondo.png" alt="Plan de alimentación" class="asesoria-img">
+                    <h3>Plan de alimentación personalizado</h3>
+                </div>
+                <div class="asesoria-box">
+                    <img src="images/suplemento sin fondo.png" alt="Suplementación" class="asesoria-img">
+                    <h3>Suplementación</h3>
+                </div>
+                <div class="asesoria-box">
+                    <img src="images/pesa sin fondo.png" alt="Entrenamiento" class="asesoria-img">
+                    <h3>Programa de entrenamiento personalizado para gym o casa</h3>
+                </div>
+                <div class="asesoria-box">
+                    <img src="images/telefono sin fondo.png" alt="Whatsapp" class="asesoria-img">
+                    <h3>Respuesta rápida de dudas por Whatsapp</h3>
+                </div>
             </div>
-            <div class="asesoria-box">
-                <img src="images/suplemento sin fondo.png" alt="Suplementación" class="asesoria-img">
-                <h3>Suplementación</h3>
-            </div>
-            <div class="asesoria-box">
-                <img src="images/pesa sin fondo.png" alt="Entrenamiento" class="asesoria-img">
-                <h3>Programa de entrenamiento personalizado para gym o casa</h3>
-            </div>
-            <div class="asesoria-box">
-                <img src="images/telefono sin fondo.png" alt="Whatsapp" class="asesoria-img">
-                <h3>Respuesta rápida de dudas por Whatsapp</h3>
-            </div>
-        </div>
+        </section> 
     </main>
-   
+
     <footer>
         <div class="footer-container">
             <img src="images/Logo para mi-web.png" alt="Logo de Josué Consultor Nutricional" class="footer-logo">

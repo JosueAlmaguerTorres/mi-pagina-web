@@ -103,7 +103,7 @@ nav ul li a:hover {
 
 .contenedor-imagen {
     top: 150px;
-    position: absolute;
+    position: relative;
     left: 50px;
     z-index: 10; /* Se asegura de que esté encima de la sección */
 }
@@ -177,6 +177,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
     gap: 50px;
     margin-top: 40px;
+    margin-bottom: 60px;
 }
 
 .asesoria-box {
@@ -471,3 +472,91 @@ footer {
   border-bottom: 1px solid #ccc;
   padding-bottom: 1rem;
 }
+/* Estilos responsive para móviles */
+@media (max-width: 768px) {
+    nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    nav ul li {
+      width: 100%;
+      text-align: center;
+    }
+  
+    nav ul li a {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      color: #000; /* o el color que uses normalmente */
+      text-decoration: none;
+    }
+  
+    .contenedor-imagen {
+      left: 0;
+      top: 100px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .asesoria-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .quien-soy-contenido {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .contenedor-imagen {
+      position: static;
+      left: 0;
+      top: 0;
+      margin-bottom: 20px;
+    }
+  
+    .asesoria-container {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .servicios-contenedor {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .nuevo-testimonio .btn {
+      width: 100%;
+    }
+  
+    .asesoria-box, .servicio-box, .recurso-box {
+      width: 90%;
+      max-width: 300px;
+    }
+  
+    .modal-content {
+      width: 95%;
+    }
+  }
